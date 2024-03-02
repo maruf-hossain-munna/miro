@@ -5,14 +5,14 @@ import Button from "./Button";
 
 export default function Header() {
     return (
-        <div className="max-w-[1380px] mx-auto xl:px-12 md:px-4 px-4 h-[90px] border-b-[1px] border-b-[#F0F0F0] flex justify-between items-center mb-12">
+        <div className="max-w-[1380px] mx-auto xl:px-8 md:px-4 px-4 h-[90px] border-b-[1px] border-b-[#F0F0F0] flex justify-between items-center mb-12">
             <div className="flex items-center gap-5">
                 <div>
                     <Image
                         src='/images/logo.png'
                         alt="Miro Logo"
-                        width={91}
-                        height={32}
+                        width={100}
+                        height={40}
                     />
                 </div>
 
