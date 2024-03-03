@@ -18,6 +18,8 @@ const config: Config = {
         "sky-blue" : "#4262FF",
         "dark-purple" : "#02033B",
         "light-orrange" : "#FFC247",
+        "base-black" : "#050038",
+        "dark-gray" : "#050038",
       },
     },
   },

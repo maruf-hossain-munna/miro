@@ -16,7 +16,7 @@ const Button: React.FC<ButtonProps> = ({
 }) => {
     return (
         <button
-            className={`rounded-3xl flex items-center gap-2
+            className={`rounded-3xl flex items-center gap-2 justify-center
             ${outline ? 'bg-white hover:bg-white/90 text-sky-blue' : 'bg-sky-blue hover:bg-sky-blue/90 text-white'}
             ${custom ? custom : ''}
             `}>
