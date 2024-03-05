@@ -20,7 +20,7 @@ export default function HeroArea() {
                     <input
                         type="email"
                         name="" id=""
-                        className="w-full px-5 py-2 rounded-[32px] border border-[#9B99AF] my-3"
+                        className="outline-none w-full px-5 py-2 rounded-[32px] border border-[#9B99AF] my-3"
                         placeholder="Enter your work email"
                     />
                     <Button

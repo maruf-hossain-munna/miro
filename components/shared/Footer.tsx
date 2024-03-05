@@ -62,8 +62,8 @@ export default function Footer() {
                     </div>
 
                     <div className="w-full lg:w-[45%]">
-                        <div className="bg-light-orrange p-2 rounded-3xl">
-                            <div className="bg-[url('/images/newsletter-bg.png')] p-3 bg-no-repeat bg-cover z-30">
+                        <div className="bg-light-orrange p-2 rounded-3xl w-full md:max-w-[450px] mx-auto">
+                            <div className="bg-[url('/images/newsletter-bg.png')] p-4 bg-no-repeat bg-cover z-30">
                                 <h3 className="text-[#02033B] text-[23px] font-extrabold">Sign up to our newsletter</h3>
                                 <p className="text-[#02033B] text-[15px] mt-5">
                                     Receive the latest mobile security news, exclusive discounts & offers straight to your inbox!
@@ -73,7 +73,7 @@ export default function Footer() {
                                         type="email"
                                         name="email"
                                         id=""
-                                        className="rounded-l-[21px] px-4 py-2 w-[75%]"
+                                        className="outline-none rounded-l-[21px] px-4 py-2 w-[75%]"
                                         placeholder="Email Address"
                                     />
                                     <button type="submit" className="bg-dark-purple text-white w-[25%] py-2 rounded-r-[21px] ">
