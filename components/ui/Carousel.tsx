@@ -90,7 +90,7 @@ const Carousel = () => {
                 </div>
                 {/* slider container */}
                 <div
-                    className="ease-linear duration-300 flex mb-20"
+                    className="ease-linear duration-300 flex mb-20 "
                     style={{ transform: `translateX(-${currentSlider * (isSmallScreen ? 100 : 33)}%)` }}>
                     {/* sliders */}
                     {teams.map((team) => (
