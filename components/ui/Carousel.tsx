@@ -64,11 +64,11 @@ const Carousel = () => {
 
     const [currentSlider, setCurrentSlider] = useState(0);
     // button handler
-    const prevSlider = () => setCurrentSlider((currentSlider) => (currentSlider === 0 ? teams.length - 3 : currentSlider - 1));
-    const nextSlider = () => setCurrentSlider((currentSlider) => (currentSlider === teams.length - 3 ? 0 : currentSlider + 1));
+    const prevSlider = () => setCurrentSlider((currentSlider) => (currentSlider === 0 ? teams.length - 5 : currentSlider - 1));
+    const nextSlider = () => setCurrentSlider((currentSlider) => (currentSlider === teams.length -5 ? 0 : currentSlider + 1));
 
 
-    const isSmallScreen = window.innerWidth <= 768;
+    // const isSmallScreen = window.innerWidth <= 768;
     return (
         <div className="max-w-full pt-16 mx-auto flex flex-row items-center overflow-hidden ">
             <div className="relative overflow-hidden">
@@ -91,7 +91,8 @@ const Carousel = () => {
                 {/* slider container */}
                 <div
                     className="ease-linear duration-300 flex mb-20 "
-                    style={{ transform: `translateX(-${currentSlider * (isSmallScreen ? 100 : 33)}%)` }}>
+                    style={{ transform: `translateX(-${currentSlider * 100}%)` }}>
+                    {/* style={{ transform: `translateX(-${currentSlider * (isSmallScreen ? 100 : 33)}%)` }}> */}
                     {/* sliders */}
                     {teams.map((team) => (
                         <div key={team.id} className=" min-w-full md:min-w-[50%] lg:min-w-[33%]">
