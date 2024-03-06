@@ -6,6 +6,7 @@ import HeroArea from "@/components/ui/HeroArea";
 import TheWaysWeWork from "@/components/ui/TheWaysWeWork";
 import TrustedUsers from "@/components/ui/TrustedUsers";
 import WorkTogether from "@/components/ui/WorkTogether";
+import BuiltTeams from "@/components/ui/tabs/teamsTab/BuiltTeams";
 import BuiltWork from "@/components/ui/tabs/workTab/BuiltWork";
 
 export default function Home() {
@@ -13,12 +14,13 @@ export default function Home() {
     <div className="min-h-screen">
       <Container>
         <HeroArea />
-        {/* <TrustedUsers /> */}
+        <TrustedUsers />
         <Collaborate />
         <WorkTogether />
         <ConnectTools />
         <TheWaysWeWork />
-        {/* <BuiltWork /> */}
+        <BuiltWork />
+        <BuiltTeams />
         <BestTeams />
       </Container>
     </div>

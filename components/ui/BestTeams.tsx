@@ -11,7 +11,7 @@ const BestTeams = () => {
             <Button
                 label='See all customer stories →'
                 outline
-                custom='w-[285px] mx-auto text-center py-[10px] mt-4'
+                custom='w-[285px] mx-auto text-center py-[10px] mt-6'
             />
 
             <Carousel />

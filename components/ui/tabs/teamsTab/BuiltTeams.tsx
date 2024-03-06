@@ -1,28 +1,28 @@
 'use client';
 
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Brainstorming from "../tabItems/Brainstorming";
+import UxDesign from "../tabItems/UxDesign";
 
-
-const BuiltWork = () => {
+const BuiltTeams = () => {
     const [toggleState, setToggleState] = useState(1);
 
     const toggleTab = (id: number) => {
         setToggleState(id)
     }
 
-    const firstBtn = React.useRef<HTMLButtonElement>(null);
+    const firstBtnRef = React.useRef<HTMLButtonElement>(null);
 
     useEffect(() => {
-        firstBtn.current?.focus();
+        firstBtnRef.current?.focus();
     }, [])
 
     const tabs = "px-3 lg:px-5 py-3 outline-none text-[11px] lg:text-sm text-base-black border border-[#F2F2F2] rounded-[24px]  hover:bg-[#F2F2F2] focus:bg-[#F2F2F2] focus:border-[#F2F2F2] focus:font-medium";
 
     return (
-        <div className="mt-24 overflow-hidden">
+        <div className="mt-24 overflow-auto">
             <h3 className="text-base-black text-[35px] lg:text-[48px] font-bold leading-tight">
-                Built for the way you work
+                Built for all kinds of teams
             </h3>
 
             <div className="mt-6">
@@ -31,89 +31,87 @@ const BuiltWork = () => {
                     <button
                         className={`${tabs}`}
                         onClick={() => toggleTab(1)}
-                        ref={toggleState === 1 ? firstBtn : null}
+                        ref={toggleState === 1 ? firstBtnRef : null}
                     >
-                        Brainstorming
+                        UX & Design
                     </button>
                     <button
                         className={`${tabs}`}
                         onClick={() => toggleTab(2)}
                     >
-                        Diagramming
+                        Marketing
                     </button>
                     <button
                         className={`${tabs}`}
                         onClick={() => toggleTab(3)}
                     >
-                        Meetings & Workshops
+                        Product Management
                     </button>
                     <button
                         className={`${tabs}`}
                         onClick={() => toggleTab(4)}
                     >
-                        Scrum Events
+                        Engineering
                     </button>
                     <button
                         className={`${tabs}`}
                         onClick={() => toggleTab(5)}
                     >
-                        Mapping
+                        Consultants
                     </button>
                     <button
                         className={`${tabs}`}
                         onClick={() => toggleTab(6)}
                     >
-                        Research & Design
+                        Agile Coaches
                     </button>
                     <button
                         className={`${tabs}`}
                         onClick={() => toggleTab(7)}
                     >
-                        Strategic Planning
+                        Sales
                     </button>
                 </div>
 
                 {/* tabs content */}
                 <div>
                     <div className={toggleState === 1 ? 'block' : 'hidden'}>
-                        <Brainstorming />
+                        <UxDesign />
                     </div>
                     <div className={toggleState === 2 ? 'block' : 'hidden'}>
                         <h3 className="text-3xl text-center font-bold mt-12 text-base-black">
-                            This Diagramming section is loading...
+                            This Marketing section is loading...
                         </h3>
                     </div>
                     <div className={toggleState === 3 ? 'block' : 'hidden'}>
                         <h3 className="text-3xl text-center font-bold mt-12 text-base-black">
-                            This Meetings & Workshops section is loading...
+                            This Product Management section is loading...
                         </h3>
                     </div>
                     <div className={toggleState === 4 ? 'block' : 'hidden'}>
                         <h3 className="text-3xl text-center font-bold mt-12 text-base-black">
-                            This Scrum Events section is loading...
+                            This Engineering section is loading...
                         </h3>
                     </div>
                     <div className={toggleState === 5 ? 'block' : 'hidden'}>
                         <h3 className="text-3xl text-center font-bold mt-12 text-base-black">
-                            This Mapping section is loading...
+                            This Consultants section is loading...
                         </h3>
                     </div>
                     <div className={toggleState === 6 ? 'block' : 'hidden'}>
                         <h3 className="text-3xl text-center font-bold mt-12 text-base-black">
-                            This Research & Design section is loading...
+                            This Agile Coaches section is loading...
                         </h3>
                     </div>
                     <div className={toggleState === 7 ? 'block' : 'hidden'}>
                         <h3 className="text-3xl text-center font-bold mt-12 text-base-black">
-                            This Strategic Planning section is loading...
+                            This sales section is loading...
                         </h3>
                     </div>
                 </div>
             </div>
-
-
         </div>
     )
 }
 
-export default BuiltWork
+export default BuiltTeams
